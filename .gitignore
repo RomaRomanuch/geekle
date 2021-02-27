@@ -1,6 +1,8 @@
 # Artifacts
 stash/
 
+/node_modules
+
 # Logs
 logs
 *.log

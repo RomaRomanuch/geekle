@@ -1,0 +1,26 @@
+$mobile-width: 300px;
+$agenda-section-width: 1160px;
+$tracks-section-width: 1900px;
+
+// colors
+
+$main-background-color: #171716;
+
+
+
+@mixin desktop-media-agenda {
+    @media (min-width: #{$agenda-section-width}) {
+        @content;
+    }
+}
+
+@mixin desktop-media-full {
+    @media (min-width: #{$tracks-section-width}) {
+        @content;
+    }
+}
+
+body {
+    background-color: $main-background-color;
+}
+
