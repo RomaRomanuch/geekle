@@ -1,0 +1,29 @@
+.container {
+    width: $mobile-width;
+    margin: 0 auto;
+
+    @include desktop-media-agenda {
+      width: 1160px;
+    }
+
+    @include desktop-media-full {
+      width: 1900px;
+    }
+  }
+
+
+.header {
+    min-width: 355px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-background-color;
+    height: 40px;
+    border: 1px solid $main-highlight-color;
+    padding: 0px 10px;
+    margin: 10px 10px 0px 10px;
+
+    &__navigation {
+        padding-bottom: 7px;
+    }
+}
