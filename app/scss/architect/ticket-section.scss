@@ -1,4 +1,64 @@
 .ticket {
-    background-image: url("/images/mobile/background-to-ticket.jpg");
-    height: 500px;
+    background-image: url("../images/mobile/background-to-ticket.jpg");
+    background-size: cover;
+    margin-top: -50px;
+    padding-top: 70px;
+
+    &__title {
+        color: $main-highlight-color;
+        text-transform: uppercase;
+        font-family: 'Bizon';
+        font-size: 43px;
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        width: 300px;
+        height: 55px;
+        font-family: 'Bizon';
+        font-size: 40px;
+        color: $main-background-color;
+        background-color: $main-white-color;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__paragraph-1 {
+        font-family: 'Bizon';
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $main-white-color;
+        opacity: 0.5;
+    }
+
+    &__paragraph-2 {
+        font-family: 'Jost';
+        font-size: 18px;
+        color: $main-white-color;
+        opacity: 0.5;
+    }
+
+    &__paragraph-3 {
+        font-family: 'Jost';
+        font-size: 18px;
+        color: $main-highlight-color;
+        margin-bottom: 25px;
+    }
+
+    &__date {
+        border: 1px solid $main-highlight-color;
+        font-family: 'Bizon';
+        font-size: 20px;
+        height: 37px;
+        color: $main-highlight-color;
+        text-align: center;
+        background-color: $main-background-color;
+        line-height: 1.7;
+    }
 }
+

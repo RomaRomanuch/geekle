@@ -1,0 +1,26 @@
+.track {
+    padding-top: 45px;
+
+    &__title {
+        font-family: 'Jost';
+        color: $main-white-color;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    &__description {
+        font-family: 'Jost';
+        font-size: 18px;
+        text-align: center;
+        color: $main-white-color;
+        margin-bottom: 30px;
+    }
+
+    &__head {
+        font-family: 'Jost';
+        font-size: 25px;
+        color: $main-background-color;
+        text-align: center;
+        background-color: $main-highlight-color;
+    }
+}
