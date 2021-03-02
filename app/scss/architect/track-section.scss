@@ -84,9 +84,7 @@
 
     &__items {
 
-        // @include desktop-media-agenda {
-        //     height: 215px;
-        // }
+        
         
         &::after {
             content: '';
@@ -139,6 +137,10 @@
         display: flex;
         padding: 20px 5px;
 
+        @include desktop-media-agenda {
+            height: 215px;
+        }
+
         &-foto {
             margin-right: 40px;
         }
@@ -148,6 +150,7 @@
             @include desktop-media-full {
                 position: relative;
                 left: 100px;
+                bottom: -10px;
             }
         }
 
@@ -167,7 +170,7 @@
             @include desktop-media-full {
                 font-size: 25px;
                 position: relative;
-                left: -160px;
+                left: -165px;
             }
         }
 
@@ -180,7 +183,7 @@
             @include desktop-media-full {
                 font-size: 20px;
                 position: relative;
-                left: -160px;
+                left: -165px;
             }
         }
 
@@ -195,6 +198,7 @@
                 width: 420px;
                 position: relative;
                 right: -220px;
+                bottom: 50px;
             }
         }
 
@@ -211,7 +215,9 @@
                 width: 160px;
                 height: 40px;
                 font-size: 20px;
-                margin-right: 40px;
+                position: relative;
+                right: -220px;
+                top: -30px;
             }
         }
 
@@ -227,6 +233,9 @@
                 width: 160px;
                 height: 40px;
                 font-size: 20px;
+                position: relative;
+                right: -240px;
+                top: -30px;
         }
     }
 
