@@ -25,5 +25,10 @@ $main-white-color: #ffffff;
 
 body {
     background-color: $main-background-color;
+    padding-bottom: 80px;
+}
+
+#highlight {
+    color: $main-highlight-color;
 }
 

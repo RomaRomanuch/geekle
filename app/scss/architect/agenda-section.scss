@@ -1,12 +1,20 @@
 .agenda {
     padding-top: 100px;
 
+    @include desktop-media-agenda {
+        padding-top: 0;
+    }
+
     &__title {
         text-align: center;
         font-family: 'Jost';
         font-size: 60px;
         color: $main-highlight-color;
-        text-transform: uppercase;    
+        text-transform: uppercase;  
+        
+        @include desktop-media-agenda {
+            font-size: 120px;
+        }
     }
 
     &__timezone {
@@ -16,6 +24,10 @@
         color: $main-white-color;
         font-size: 30px;
         margin-bottom: 10px;
+
+        @include desktop-media-agenda {
+            font-size: 50px;
+        }
     }
 
     &__description {
@@ -24,6 +36,17 @@
         text-align: center;
         color: $main-white-color;
         margin-bottom: 40px;
+
+        @include desktop-media-agenda {
+            font-size: 20px;
+        }
+    }
+
+    &__list {
+
+        @include desktop-media-agenda {
+            display: flex;
+        }
     }
 
     &__list-item {
@@ -37,6 +60,23 @@
         padding-top: 18px;
         position: relative;
         display: none;
+
+        @include desktop-media-agenda {
+            display: block;
+            width: 387px;
+            height: 65px;
+            font-size: 22px;
+            background-color: $main-background-color;
+            color: $main-white-color;
+            text-align: center;
+            border: 1px solid $main-white-color;
+
+            &:hover {
+                border: none;
+                background-color: $main-highlight-color;
+                color: $main-background-color;
+            }
+        }
 
         &::after {
             content: '';

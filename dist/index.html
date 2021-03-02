@@ -8,28 +8,34 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- HEADER --> 
+    <!-- Sizes to container in header.scss -->
 
     <header>
       <div class="header">
-        <picture class="header__picture">
-          <source
-            media="(min-width: 1160px)"
-            srcset="images/desktop/main-logo.png"
-          />
-          <img
-            class="header__image"
-            src="images/mobile/main-logo.png"
-            alt="main-logo"
-          />
-        </picture>
-        <nav class="header__navigation">
-          <img
-            class="header__navigation-img"
-            src="images/mobile/burger-menu.png"
-            alt="burger-menu"
-          />
-        </nav>
+        <div class="header__wrapper">
+          <picture class="header__picture">
+            <source
+              media="(min-width: 1160px)"
+              srcset="images/desktop/main-logo.png"
+            />
+            <img
+              class="header__image"
+              src="images/mobile/main-logo.png"
+              alt="main-logo"
+            />
+          </picture>
+          <nav class="header__navigation">
+            <img
+              class="header__navigation-img"
+              src="images/mobile/burger-menu.png"
+              alt="burger-menu"
+            />
+            <a href="#" class="header__menu">Agenda</a>
+            <a href="#" class="header__menu">Tickets</a>
+            <a href="#" class="header__menu">team</a>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -40,7 +46,10 @@
         <h1 class="ticket__title">Worldwide Software Architecture Summit</h1>
         <div class="ticket__wrapper">
           <picture class="ticket__picture">
-            <source media="(min-width: )" srcset="" />
+            <source
+              media="(min-width: 1160px)"
+              srcset="images/desktop/dreamer.png"
+            />
             <img src="images/mobile/dreamer.png" alt="" class="ticket__image" />
           </picture>
           <button class="ticket__button">Buy ticket</button>
@@ -62,28 +71,230 @@
         </p>
         <ul class="agenda__list">
           <li class="agenda__list-item">CET (Central European Time)</li>
-          <li class="agenda__list-item"></li>
-          <li class="agenda__list-item"></li>
+          <li class="agenda__list-item">CST (Central Standard Time)</li>
+          <li class="agenda__list-item">Vendor track</li>
         </ul>
       </div>
     </section>
 
-    <section class="track container">
-      <ul class="track__list">
+    <section class="track container" id="special-size">
+      <h3 class="special-title">NFR – Non-functional requirenment</h3>
+      <ul class="track__list"> 
         <li class="track__items">
           <h2 class="track__title">Career Track</h2>
           <p class="track__description">
-            Aimed to upgrade Developers’ skills to evolve to Software Architect
+            Aimed to upgrade Developers’ skills to<br> evolve to Software Architect
           </p>
           <h3 class="track__head">NFR – Non-functional requirenment</h3>
           <ul class="career">
-              <li class="career__items"></li>
-              <li class="career__items"></li>
-              <li class="career__items"></li>
-              <li class="career__items"></li>
+            <li class="career__items">
+              <ul class="career__card">
+                <li class="career__card-foto">
+                  <picture class="career__card-worker">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/Alexander-Kuttig.png" />
+                    <img
+                      src="images/mobile/Alexander Kuttig foto.jpg"
+                      alt="photo-of-worker"
+                      class="career__card-worker"
+                    />
+                  </picture>
+                  <picture class="career__card-logo">
+                    <source media="(min-width: 1160px )" srcset="images/desktop/Alexander-Kuttig-logo.png" />
+                    <img
+                      src="images/mobile/Alexander Kuttig logo.png"
+                      alt="photo-of-workplace"
+                      class="career__card-logo-pic"
+                    />
+                  </picture>
+                </li>
+                <li class="career__card-info">
+                  <p class="career__card-time">10:10 — 10:40</p>
+                  <p class="career__card-name">Alexander Kuttig</p>
+                  <p class="career__card-description">
+                    "Using AWS and Google Cloud in a cost-efficient way"
+                  </p>
+                  <button class="career__card-show">show abstract</button>
+                  <button class="career__card-add">add to calendar</button>
+                </li>
+              </ul>
+            </li>
+            <li class="career__items">
+              <ul class="career__card">
+                <li class="career__card-foto">
+                  <picture class="career__card-worker">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/Ivan-Regoni.png" />
+                    <img
+                      src="images/mobile/Ivan Rigoni foto.jpg"
+                      alt="photo-of-worker"
+                      class="career__card-worker"
+                    />
+                  </picture>
+                  <picture class="career__card-logo">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/Ivan-Regoni-logo.png" />
+                    <img
+                      src="images/mobile/Ivan Rigoni logo.png"
+                      alt="photo-of-workplace"
+                      class="career__card-logo-pic"
+                    />
+                  </picture>
+                </li>
+                <li class="career__card-info">
+                  <p class="career__card-time">10:40 — 11:10</p>
+                  <p class="career__card-name">Ivan Rigoni</p>
+                  <p class="career__card-description">
+                    "A Million Requests in 10 minutes"
+                  </p>
+                  <button class="career__card-show">show abstract</button>
+                  <button class="career__card-add">add to calendar</button>
+                </li>
+              </ul>
+            </li>
+            <li class="career__items">
+              <ul class="career__card">
+                <li class="career__card-foto">
+                  <picture class="career__card-worker">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/Rohit.png" />
+                    <img
+                      src="images/mobile/Alexander Mexicano.jpg"
+                      alt="photo-of-worker"
+                      class="career__card-worker"
+                    />
+                  </picture>
+                  <picture class="career__card-logo">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/Rohit-logo.png" />
+                    <img
+                      src="images/mobile/Alexander Mexicano logo.png"
+                      alt="photo-of-workplace"
+                      class="career__card-logo-pic"
+                    />
+                  </picture>
+                </li>
+                <li class="career__card-info">
+                  <p class="career__card-time">11:10 — 11:40</p>
+                  <p class="career__card-name">Rohit Bhardwaj</p>
+                  <p class="career__card-description">
+                    "Resilient Cloud Architecture Design Patterns"
+                  </p>
+                  <button class="career__card-show">show abstract</button>
+                  <button class="career__card-add">add to calendar</button>
+                </li>
+              </ul>
+            </li>
+            <li class="career__items-time">
+              <p>11:40 — 12:10</p>
+              <p>Q&A</p>
+            </li>
           </ul>
         </li>
-        <li class="track__items"></li>
+        <li class="track__items">
+          <h2 class="track__title" id="highlight">Pro Track</h2>
+          <p class="track__description">
+            Practical tech cases for Experienced Software Architects, CTOs and
+            Senior Software Engineers
+          </p>
+          <h3 class="track__head">NFR – Non-functional requirenment</h3>
+          <ul class="career">
+            <li class="career__items">
+              <ul class="career__card">
+                <li class="career__card-foto">
+                  <picture class="career__card-worker">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/heidi.png" />
+                    <img
+                      src="images/mobile/Heidi Waterhouse foto.jpg"
+                      alt="photo-of-worker"
+                      class="career__card-worker"
+                    />
+                  </picture>
+                  <picture class="career__card-logo">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/Alexander-Kuttig-logo.png" />
+                    <img
+                      src="images/mobile/Alexander Kuttig logo.png"
+                      alt="photo-of-workplace"
+                      class="career__card-logo-pic"
+                    />
+                  </picture>
+                </li>
+                <li class="career__card-info">
+                  <p class="career__card-time">10:10 — 10:40</p>
+                  <p class="career__card-name">Heidi Waterhouse</p>
+                  <p class="career__card-description">
+                    "Breaking Strain: A story about capacities and testing"
+                  </p>
+                  <button class="career__card-show">show abstract</button>
+                  <button class="career__card-add">add to calendar</button>
+                </li>
+              </ul>
+            </li>
+            <li class="career__items">
+              <ul class="career__card">
+                <li class="career__card-foto">
+                  <picture class="career__card-worker">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/emma.png" />
+                    <img
+                      src="images/mobile/Emma Thomas foto.jpg"
+                      alt="photo-of-worker"
+                      class="career__card-worker"
+                    />
+                  </picture>
+                  <picture class="career__card-logo">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/emma-logo.png" />
+                    <img
+                      src="images/mobile/Emma Thomas logo.png"
+                      alt="photo-of-workplace"
+                      class="career__card-logo-pic"
+                    />
+                  </picture>
+                </li>
+                <li class="career__card-info">
+                  <p class="career__card-time">10:40 — 11:10</p>
+                  <p class="career__card-name">Emma Thomas</p>
+                  <p class="career__card-description">
+                    "But we wanted our solution to transmit data faster than the
+                    speed of light"
+                  </p>
+                  <button class="career__card-show">show abstract</button>
+                  <button class="career__card-add">add to calendar</button>
+                </li>
+              </ul>
+            </li>
+            <li class="career__items">
+              <ul class="career__card">
+                <li class="career__card-foto">
+                  <picture class="career__card-worker">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/michael.png" />
+                    <img
+                      src="images/mobile/Michael Ritchson.jpg"
+                      alt="photo-of-worker"
+                      class="career__card-worker"
+                    />
+                  </picture>
+                  <picture class="career__card-logo">
+                    <source media="(min-width: 1160px)" srcset="images/desktop/michael-logo.png" />
+                    <img
+                      src="images/mobile/Michael Ritchson logo.png"
+                      alt="photo-of-workplace"
+                      class="career__card-logo-pic"
+                    />
+                  </picture>
+                </li>
+                <li class="career__card-info">
+                  <p class="career__card-time">11:10 — 11:40</p>
+                  <p class="career__card-name">Michael Ritchson</p>
+                  <p class="career__card-description">
+                    "Apache Tomee, a successful open source migration journey
+                    for NASA"
+                  </p>
+                  <button class="career__card-show">show abstract</button>
+                  <button class="career__card-add">add to calendar</button>
+                </li>
+              </ul>
+            </li>
+            <li class="career__items-time">
+              <p>11:40 — 12:10</p>
+              <p>Q&A</p>
+            </li>
+          </ul>
+        </li>
       </ul>
     </section>
     <script src="js/main.min.js"></script>

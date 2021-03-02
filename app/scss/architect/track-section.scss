@@ -1,11 +1,37 @@
 .track {
     padding-top: 45px;
 
+    &__list {
+        @include desktop-media-full {
+            display: flex;
+        }
+    }
+
     &__title {
         font-family: 'Jost';
         color: $main-white-color;
         font-size: 45px;
         text-align: center;
+
+        @include desktop-media-full {
+            font-size: 80px;
+        }
+    }
+
+    &__items {
+
+        @include desktop-media-full {
+            width: 50%;
+        }
+
+        &:last-of-type {
+            padding-top: 50px;
+
+            @include desktop-media-full {
+                padding-top: 0;
+                margin-left: 20px;
+            }
+        }
     }
 
     &__description {
@@ -14,6 +40,11 @@
         text-align: center;
         color: $main-white-color;
         margin-bottom: 30px;
+
+        @include desktop-media-full {
+            font-size: 29px;
+            margin-bottom: 118px;
+        }
     }
 
     &__head {
@@ -22,5 +53,182 @@
         color: $main-background-color;
         text-align: center;
         background-color: $main-highlight-color;
+
+        @include desktop-media-full {
+            display: none;
+        }
+    }
+}
+
+.special-title {
+    display: none;
+    
+    @include desktop-media-full {
+        display: block;
+        font-family: 'Jost';
+        font-size: 25px;
+        color: $main-background-color;
+        text-align: center;
+        background-color: $main-highlight-color;
+        position: relative;
+        bottom: -320px;
+        height: 68px;
+        font-size: 35px;
+        padding-top: 5px;
+    }
+}
+
+.career {
+    border: 1px solid $main-white-color;
+    padding-bottom: 20px;
+
+    &__items {
+
+        // @include desktop-media-agenda {
+        //     height: 215px;
+        // }
+        
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: calc(100% - 20px);
+            background-color: gray;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        &-time {
+            padding-left: 150px;
+
+            @include desktop-media-full {
+                display: flex;
+                padding-left: 30px;
+                padding-top: 30px;
+            }
+
+            p {
+                &:first-of-type {
+                    font-family: 'Bizon';
+                    font-size: 20px;
+                    color: $main-highlight-color;
+                    margin-top: 20px;
+
+                    @include desktop-media-full {
+                        font-size: 25px;
+                        margin-top: 0;
+                        margin-right: 300px;
+                    }
+                }
+
+                &:last-of-type {
+                    font-family: 'Jost';
+                    font-size: 14px;
+                    color: $main-white-color;
+
+                    @include desktop-media-full {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        padding: 20px 5px;
+
+        &-foto {
+            margin-right: 40px;
+        }
+
+        &-worker{
+
+            @include desktop-media-full {
+                position: relative;
+                left: 100px;
+            }
+        }
+
+        &-logo-pic {
+            @include desktop-media-full {
+                position: relative;
+                bottom: 60px;
+                left: 20px;
+            }
+        }
+
+        &-time {
+            color: $main-highlight-color;
+            font-family: 'Bizon';
+            font-size: 20px;
+
+            @include desktop-media-full {
+                font-size: 25px;
+                position: relative;
+                left: -160px;
+            }
+        }
+
+        &-name {
+            color: $main-white-color;
+            font-family: 'Jost';
+            font-size: 12px;
+            margin-bottom: 17px;
+
+            @include desktop-media-full {
+                font-size: 20px;
+                position: relative;
+                left: -160px;
+            }
+        }
+
+        &-description {
+            font-family: 'Jost';
+            color: $main-white-color;
+            font-size: 14px;
+            margin-bottom: 15px;
+
+            @include desktop-media-full {
+                font-size: 22px;
+                width: 420px;
+                position: relative;
+                right: -220px;
+            }
+        }
+
+        &-show {
+            background-color: $main-highlight-color;
+            color: $main-background-color;
+            width: 140px;
+            height: 30px;
+            font-family: 'Bizon';
+            font-size: 17px;
+            margin-bottom: 10px;
+
+            @include desktop-media-full {
+                width: 160px;
+                height: 40px;
+                font-size: 20px;
+                margin-right: 40px;
+            }
+        }
+
+        &-add {
+            border: 2px solid $main-white-color;
+            width: 140px;
+            height: 30px;
+            color: $main-white-color;
+            font-family: 'Bizon';
+            font-size: 17px;
+
+            @include desktop-media-full {
+                width: 160px;
+                height: 40px;
+                font-size: 20px;
+        }
+    }
+
     }
 }
