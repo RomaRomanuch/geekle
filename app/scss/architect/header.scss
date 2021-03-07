@@ -11,12 +11,6 @@
     // }
   }
 
-  #special-size {
-    @include desktop-media-agenda {
-      width: 99%;
-    }
-  }
-
 
 .header {
     min-width: 355px;

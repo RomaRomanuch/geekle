@@ -2,7 +2,7 @@
     padding-top: 45px;
 
     &__list {
-        @include desktop-media-full {
+        @include desktop-media-agenda {
             display: flex;
         }
     }
@@ -13,23 +13,23 @@
         font-size: 45px;
         text-align: center;
 
-        @include desktop-media-full {
+        @include desktop-media-agenda {
             font-size: 80px;
         }
     }
 
     &__items {
 
-        @include desktop-media-full {
+        @include desktop-media-agenda {
             width: 50%;
         }
 
         &:last-of-type {
             padding-top: 50px;
 
-            @include desktop-media-full {
+            @include desktop-media-agenda {
                 padding-top: 0;
-                margin-left: 20px;
+                // margin-left: 1px;
             }
         }
     }
@@ -41,9 +41,9 @@
         color: $main-white-color;
         margin-bottom: 30px;
 
-        @include desktop-media-full {
+        @include desktop-media-agenda {
             font-size: 29px;
-            margin-bottom: 118px;
+            
         }
     }
 
@@ -54,7 +54,7 @@
         text-align: center;
         background-color: $main-highlight-color;
 
-        @include desktop-media-full {
+        @include desktop-media-agenda {
             display: none;
         }
     }
@@ -63,7 +63,7 @@
 .special-title {
     display: none;
     
-    @include desktop-media-full {
+    @include desktop-media-agenda {
         display: block;
         font-family: 'Jost';
         font-size: 25px;
@@ -81,6 +81,17 @@
 .career {
     border: 1px solid $main-white-color;
     padding-bottom: 20px;
+
+    @include desktop-media-agenda {
+        position: relative;
+        bottom: -90px;
+    }
+
+    &-2 {
+        @include desktop-media-agenda {
+            bottom: -48px;
+        }
+    }
 
     &__items {
 
@@ -100,7 +111,7 @@
         &-time {
             padding-left: 150px;
 
-            @include desktop-media-full {
+            @include desktop-media-agenda {
                 display: flex;
                 padding-left: 30px;
                 padding-top: 30px;
@@ -113,7 +124,7 @@
                     color: $main-highlight-color;
                     margin-top: 20px;
 
-                    @include desktop-media-full {
+                    @include desktop-media-agenda {
                         font-size: 25px;
                         margin-top: 0;
                         margin-right: 300px;
@@ -125,7 +136,7 @@
                     font-size: 14px;
                     color: $main-white-color;
 
-                    @include desktop-media-full {
+                    @include desktop-media-agenda {
                         font-size: 25px;
                     }
                 }
@@ -139,6 +150,7 @@
 
         @include desktop-media-agenda {
             height: 215px;
+            position: relative;
         }
 
         &-foto {
@@ -147,18 +159,18 @@
 
         &-worker{
 
-            @include desktop-media-full {
+            @include desktop-media-agenda {
                 position: relative;
-                left: 100px;
+                left: 80px;
                 bottom: -10px;
             }
         }
 
         &-logo-pic {
-            @include desktop-media-full {
+            @include desktop-media-agenda {
                 position: relative;
-                bottom: 60px;
-                left: 20px;
+                left: 10px;
+                bottom: 40px;
             }
         }
 
@@ -167,10 +179,10 @@
             font-family: 'Bizon';
             font-size: 20px;
 
-            @include desktop-media-full {
+            @include desktop-media-agenda {
                 font-size: 25px;
                 position: relative;
-                left: -165px;
+                left: -180px;
             }
         }
 
@@ -180,10 +192,10 @@
             font-size: 12px;
             margin-bottom: 17px;
 
-            @include desktop-media-full {
+            @include desktop-media-agenda {
                 font-size: 20px;
                 position: relative;
-                left: -165px;
+                left: -180px;
             }
         }
 
@@ -193,12 +205,12 @@
             font-size: 14px;
             margin-bottom: 15px;
 
-            @include desktop-media-full {
+            @include desktop-media-agenda {
                 font-size: 22px;
-                width: 420px;
+                width: 260px;
                 position: relative;
-                right: -220px;
-                bottom: 50px;
+                right: -120px;
+                bottom: 80px;
             }
         }
 
@@ -211,13 +223,13 @@
             font-size: 17px;
             margin-bottom: 10px;
 
-            @include desktop-media-full {
-                width: 160px;
+            @include desktop-media-agenda {
+                width: 120px;
                 height: 40px;
                 font-size: 20px;
-                position: relative;
-                right: -220px;
-                top: -30px;
+                position: absolute;
+                left: 320px;
+                bottom: 0px;
             }
         }
 
@@ -229,13 +241,14 @@
             font-family: 'Bizon';
             font-size: 17px;
 
-            @include desktop-media-full {
-                width: 160px;
+            @include desktop-media-agenda {
+                width: 120px;
                 height: 40px;
                 font-size: 20px;
-                position: relative;
-                right: -240px;
-                top: -30px;
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                margin-bottom: 10px;
         }
     }
 
