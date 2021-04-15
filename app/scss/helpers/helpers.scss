@@ -4,31 +4,23 @@ $tracks-section-width: 1900px;
 
 // colors
 
-$main-background-color: #171716;
-$main-highlight-color: #73F9BC;
-$main-white-color: #ffffff;
 
 
 
-@mixin desktop-media-agenda {
-    @media (min-width: #{$agenda-section-width}) {
-        @content;
-    }
-}
+// @mixin desktop-media-agenda {
+//     @media (min-width: #{$agenda-section-width}) {
+//         @content;
+//     }
+// }
 
-@mixin desktop-media-full {
-    @media (min-width: #{$tracks-section-width}) {
-        @content;
-    }
-}
+// @mixin desktop-media-full {
+//     @media (min-width: #{$tracks-section-width}) {
+//         @content;
+//     }
+// }
 
 
-body {
-    background-color: $main-background-color;
-    padding-bottom: 80px;
-}
 
-#highlight {
-    color: $main-highlight-color;
-}
+
+
 
