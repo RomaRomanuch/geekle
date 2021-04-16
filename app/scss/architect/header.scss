@@ -1,0 +1,217 @@
+body {
+  color: $main-color;
+  font-size: 18px;
+  font-family: "Proxima-B";
+}
+
+hr {
+  position: relative;
+  width: 500vw;
+  left: -1500px;
+}
+
+.container {
+  max-width: 1740px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  &__first {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+  &__contacts {
+    display: flex;
+
+    &-text {
+      margin-right: 13px;
+    }
+
+    &-ico {
+      margin-right: 30px;
+      height: 25px;
+      cursor: pointer;
+      &:last-of-type {
+        margin-right: 90px;
+      }
+    }
+
+    &-phone {
+      position: relative;
+      &::before {
+        content: "";
+        background-image: url(../../images/desktop/smartphone1.png);
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: -25px;
+      }
+
+      &::after {
+        content: "";
+        background-image: url(../../images/desktop/Vector1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: -30px;
+        bottom: 0px;
+      }
+    }
+  }
+
+  &__hat {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  
+  &__catalog {
+    display: flex;
+    text-transform: uppercase;
+    padding-top: 40px;
+
+    &-items {
+      margin-right: 40px;
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: "";
+        background-image: url(../../images/desktop/Vector1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: -20px;
+        bottom: 34px;
+      }
+    }
+  }
+  &__sale {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    &-basket {
+      display: flex;
+      cursor: pointer;
+
+      &>img {
+        width: 30px;
+        height: 30px;
+        margin-right: 3px;
+      }
+    }
+    &-callback {
+      text-transform: uppercase;
+      width: 278px;
+      height: 51px;
+      background-color: $secondary-color;
+      color: white;
+      border-radius: 3px;
+      margin-left: 30px;
+    }
+  }
+  &__logo {
+    margin-bottom: 15px;
+  }
+
+  &__nav {
+    text-transform: uppercase;
+    display: flex;
+    &-item {
+        position: relative;
+        &::after {
+            content: '';
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $secondary-color;
+        }
+        &:hover::after {
+            display: block;
+        }
+        &:not(:last-of-type) {
+        margin-right: 15px;
+      }
+    }
+  }
+// 
+  &__image {
+    height: 785px;
+    background-image: url(../../images/desktop/body-backgrond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.novelty {
+  width: 462px;
+  height: 670px;
+  background-color: white;
+  margin-left: 51px;
+  text-align: center;
+  padding: 100px 75px 0px;
+  &__main {
+    font-size: 64px;
+    margin-bottom: 50px;
+  }
+  &__item {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-size: 36px;
+    font-family: "Proxima-R";
+    margin-bottom: 30px;
+  }
+  &__button {
+    color: white;
+    background-color: $secondary-color;
+    width: 209px;
+    height: 51px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  &__counter{
+    &-numbers{
+      font-size: 24px;
+      &>span {
+        &:nth-child(1){
+          font-size: 36px;
+        }
+    }
+    }
+    &-buttons {
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+      justify-content: center;
+      &>button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px black solid;
+        vertical-align: middle;
+        font-size: 25px;
+        line-height: 0;
+        &:first-of-type {
+          margin-right: 8px;
+        }
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  }
+}
