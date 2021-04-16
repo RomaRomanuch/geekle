@@ -43,7 +43,7 @@ hr {
       position: relative;
       &::before {
         content: "";
-        background-image: url(../../images/desktop/smartphone1.png);
+        background-image: url(../images/desktop/smartphone1.png);
         display: block;
         width: 25px;
         height: 25px;
@@ -53,7 +53,7 @@ hr {
 
       &::after {
         content: "";
-        background-image: url(../../images/desktop/Vector1.png);
+        background-image: url(../images/desktop/Vector1.png);
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
@@ -84,7 +84,7 @@ hr {
       cursor: pointer;
       &::after {
         content: "";
-        background-image: url(../../images/desktop/Vector1.png);
+        background-image: url(../images/desktop/Vector1.png);
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
@@ -148,7 +148,7 @@ hr {
 // 
   &__image {
     height: 785px;
-    background-image: url(../../images/desktop/body-backgrond.jpg);
+    background-image: url(../images/desktop/body-backgrond.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
